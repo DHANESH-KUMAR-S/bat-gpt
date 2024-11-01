@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("batman.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+.chat-container {
+    width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.messages {
+    height: 450px;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.header-image {
+    width: 100%px;
+    max-width: 1500px; /* Adjust width as needed */
+    display: block;
+    margin: 20px auto; /* Center the image */
+}
+.message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.user {
+    background-color: rgba(225, 245, 254, 0.8);
+    justify-content: flex-end;
+    text-align: right;
+    padding-left: 40px; /* Space for the logo */
+}
+.ai {
+    background-color: rgba(252, 228, 236, 0.8);
+    text-align: left;
+}
+.user img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 30px; /* Increase image size */
+    height: 30px; /* Increase image size */
+}
+.input-container {
+    display: flex;
+}
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+button {
+    padding: 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(3, 169, 244, 0.9);
+    color: white;
+    cursor: pointer;
+}
