@@ -2,10 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import os
 import asyncio
 from groq import AsyncGroq
-import nest_asyncio
 
-# Allow nested event loops
-nest_asyncio.apply()
 # Initialize Flask app
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
